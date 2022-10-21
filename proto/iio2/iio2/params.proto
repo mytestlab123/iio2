@@ -1,0 +1,12 @@
+syntax = "proto3";
+package mytestlab123.iio2.iio2;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/mytestlab123/iio2/x/iio2/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

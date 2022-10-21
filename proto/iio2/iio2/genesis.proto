@@ -1,0 +1,14 @@
+syntax = "proto3";
+package mytestlab123.iio2.iio2;
+
+import "gogoproto/gogo.proto";
+import "iio2/iio2/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/mytestlab123/iio2/x/iio2/types";
+
+// GenesisState defines the iio2 module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
